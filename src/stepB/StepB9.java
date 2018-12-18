@@ -20,14 +20,15 @@ public class StepB9 {
 	}
 	
 	public void obesity() {
-		this.height = this.height/100;
 		
-		this.bmi = (int) (this.weight / Math.pow(this.height, 2));
+		double heightm = this.height*0.01;
 		
-		if(this.bmi>25)
+		this.bmi = (int)(this.weight /Math.pow(heightm, 2));
+		
+		if(this.bmi>=25)
 			System.out.print("당신은 비만입니다.\n");
 		else
-			System.out.print("당신은 비만이 아닙니다.");
+			System.out.print("당신은 비만이 아닙니다.\n");
 	}
 
 }
