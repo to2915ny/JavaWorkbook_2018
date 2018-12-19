@@ -1,5 +1,6 @@
 import java.util.Scanner;
 import stepB.StepBManager;
+import stepC.StepCManager;
 
 public class WBManager {
 
@@ -13,6 +14,8 @@ public class WBManager {
 			String step = s.next();
 			if(step.equalsIgnoreCase("B")) 
 					new StepBManager();
+			if(step.equalsIgnoreCase("C"))
+					new StepCManager();
 				
 				System.out.printf("종료되었습니다.\n");
 			
