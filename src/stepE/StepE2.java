@@ -3,7 +3,7 @@ package stepE;
 import java.util.Scanner;
 
 public class StepE2 {
-private int height,blank,i,j;
+private int height,blank;
 	
 	public StepE2() {
 		input();
@@ -20,6 +20,7 @@ private int height,blank,i,j;
 	}
 	
 	public void starCal() {
+		int i,j;
 		int star=1;
 		for( i =0;i<this.height;i++) {
 			for(j=0;j<this.blank;j++) 

@@ -3,7 +3,7 @@ package stepE;
 import java.util.Scanner;
 
 public class StepE6 {
-	private int rows,columns,number,i,j;
+	private int rows,columns,number;
 	
 	public StepE6() {
 		input();
@@ -17,9 +17,9 @@ public class StepE6 {
 	}
 	
 	public void twoDimension() {
-		for(i=1;i<=rows;i++) {
+		for(int i=1;i<=rows;i++) {
 			
-			for(j=1;j<=columns;j++) {
+			for(int j=1;j<=columns;j++) {
 				this.number = i*j;
 				
 				System.out.print(this.number+" ");

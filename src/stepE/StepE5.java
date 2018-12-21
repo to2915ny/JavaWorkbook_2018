@@ -3,7 +3,7 @@ package stepE;
 import java.util.Scanner;
 
 public class StepE5 {
-	private int mode,i,j,column;
+	private int mode,column;
 	public StepE5() {
 		
 		input();
@@ -20,6 +20,7 @@ public class StepE5 {
 	}
 	
 	public void timeTable2() {
+		int i,j;
 		if(this.mode == 1) {
 			for(i=3;i<=9;i=i+2) {
 				for(j=1;j<=9;j++) {
