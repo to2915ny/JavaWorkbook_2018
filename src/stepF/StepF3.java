@@ -6,7 +6,7 @@ public class StepF3 {
 	private int jumsu[][] = new int[5][3];
 	private int sum[] = new int[3];
 	private double average[] = new double[3]; 
-	private int kor, eng, mat;
+
 	
 	
 	public StepF3() {
@@ -29,20 +29,20 @@ public class StepF3 {
 	
 	public void totalSumAvg(){
 		int i,j;
+		for(j =0; j<3;j++) {
 		for(i=0;i<5;i++) {
-			this.sum[0]=this.sum[0]+this.jumsu[i][0];
-			this.sum[1]=this.sum[1]+this.jumsu[i][1];
-			this.sum[2]=this.sum[2]+this.jumsu[i][2];
+			this.sum[j]+=this.jumsu[i][j];
 		}
-		this.kor = this.sum[0];
-		this.eng = this.sum[1];
-		this.mat = this.sum[2];
-		this.average[0] =this.kor/5;
-		this.average[1] = this.eng/5;
-		this.average[2] = this.mat/5;
-		System.out.print("국어의 총점은"+this.kor+" 이고, 평균은 "+this.average[0]+"입니다.\n");
-		System.out.print("영어의 총점은"+this.eng+" 이고, 평균은 "+this.average[1]+"입니다.\n");
-		System.out.print("수학의 총점은"+this.mat+" 이고, 평균은 "+this.average[2]+"입니다.\n");
+		}
+		
+		for(j =0; j<3;j++) 
+			this.average[j] = this.sum[j]/5;
+		
+		
+	
+		System.out.print("국어의 총점은"+this.sum[0]+" 이고, 평균은 "+this.average[0]+"입니다.\n");
+		System.out.print("영어의 총점은"+this.sum[1]+" 이고, 평균은 "+this.average[1]+"입니다.\n");
+		System.out.print("수학의 총점은"+this.sum[2]+" 이고, 평균은 "+this.average[2]+"입니다.\n");
 	}
 	
 }
