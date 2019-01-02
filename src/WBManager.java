@@ -7,6 +7,7 @@ import stepF.StepFManager;
 import stepG.StepGManager;
 import stepH.StepHManager;
 import stepI.StepIManager;
+import stepJ.StepJManager;
 public class WBManager {
 
 	public static void main(String[] args) {
@@ -33,6 +34,8 @@ public class WBManager {
 				new StepHManager();
 			if(step.equalsIgnoreCase("I"))
 				new StepIManager();
+			if(step.equalsIgnoreCase("J"))
+				new StepJManager();
 				
 				System.out.printf("종료되었습니다.\n");
 			
