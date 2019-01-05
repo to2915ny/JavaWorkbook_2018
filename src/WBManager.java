@@ -1,3 +1,4 @@
+import java.text.ParseException;
 import java.util.Scanner;
 import stepB.StepBManager;
 import stepC.StepCManager;
@@ -9,9 +10,10 @@ import stepH.StepHManager;
 import stepI.StepIManager;
 import stepJ.StepJManager;
 import stepK.StepKManager;
+import stepL.StepLManager;
 public class WBManager {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws ParseException {
 		
 		
 			
@@ -39,6 +41,8 @@ public class WBManager {
 				new StepJManager();
 			if(step.equalsIgnoreCase("K"))
 				new StepKManager();
+			if(step.equalsIgnoreCase("L"))
+				new StepLManager();
 				
 				System.out.printf("종료되었습니다.\n");
 			
